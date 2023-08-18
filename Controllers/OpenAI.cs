@@ -12,8 +12,7 @@ namespace OpenAIApp.Controllers
         [HttpGet]
        public async Task<IActionResult> GetData(string input)
         {
-            string apiKey = "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";
-            //"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";
+            string apiKey = APIKEY;
             string response = "";
             OpenAIAPI openai = new OpenAIAPI(apiKey);
             CompletionRequest completion = new CompletionRequest();
